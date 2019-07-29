@@ -1,0 +1,50 @@
+
+body{
+    background-color:lightsteelblue;
+    text-align:center;
+    /*justify-content:center;*/
+}
+#description
+{
+  padding-top:20px;
+  padding-bottom:10px;
+font-size:18px;
+}
+#survey-form{
+    background-color:whitesmoke;
+  text-align:center; 
+   justify-content:center;  
+     margin: 0 auto; 
+      width: 70%;
+}
+
+#container
+{
+    display:grid;
+justify-content:center;  
+ grid-columns:1fr 1fr;
+
+   }
+.lbl{
+    grid-column:1/2;
+   text-align:end; 
+}
+.inf{
+grid-column:2/3;
+margin-left:15px;
+text-align:justify;
+}
+#btn{
+    background-color:royalblue;
+    width:100px;
+    height:40px;
+    margin:20px auto;
+    border-radius:10%;
+    color:white;
+    object-position:center;
+   
+}
+textarea{
+ height:50px;
+    resize:vertical;
+}

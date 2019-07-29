@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Nasreen Survey</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+    </header>
+    <form id="survey-form" action="./sbt.html">
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+        <div id="container">
+            <label class="lbl" for="name" id="name-label">*Name: </label>
+            <input class="inf" id="name" type="text" placeholder="Enter your name" required />
+            <br />
+            <br />
+            <label class="lbl" for="email" id="email-label">*Email: </label>
+            <input class="inf" id="email" type="email" placeholder="Enter your email" required />
+            <br />
+            <br />
+            <label class="lbl" for="number" id="number-label">*Number: </label>
+            <input class="inf" id="number" type="number" placeholder="Enter your age" required min="18" max="60" />
+            <br />
+            <br />
+            <label class="lbl" for="dropdown">Which option best describes your current role?</label>
+            <select class="inf" id="dropdown">
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time learner</option>
+                <option value="4">Prefer Not to say</option>
+                <option value="5">Other</option>
+            </select>
+            <br />
+            <br />
+            <label class="lbl">   * How likely is that you would recommend freeCodeCamp to a friend?</label>
+            <br />
+            <div class="inf">
+                <input id="r1" type="radio" name="rcmnd" checked />
+                <label for="r1">Definitely</label>
+                <br />
+                <input id="r2" type="radio" name="rcmnd" />
+                <label for="r2">Maybe</label>
+                <br />
+                <input id="r3" type="radio" name="rcmnd" />
+                <label for="r3">Not sure</label>
+                <br />
+                <br />
+            </div>
+            <label class="lbl">
+                Things that should be improved in the future
+                (Check all that apply):
+            </label>
+            <div class="inf">
+                <input id="chk1" type="checkbox" value="FEnd" />
+                <label for="chk1">Front-end Projects</label>
+                <br />
+                <input id="chk2" type="checkbox" value="BEnd" />
+                <label for="chk2">Back-end Projects</label>
+                <br />
+                <input id="chk3" type="checkbox" value="DtVsl" />
+                <label for="chk3">Data Visualization</label>
+                <br />
+                <input id="chk4" type="checkbox" value="Challenges" />
+                <label for="chk4">Challenges</label>
+                <br />
+                <input id="chk5" type="checkbox" value="OpnSrc" />
+                <label for="chk5">Open Source Community</label>
+                <br />
+                <input id="chk6" type="checkbox" value="GtrHlp" />
+                <label for="chk6">Gitter help rooms</label>
+                <br />
+                <input id="chk7" type="checkbox" value="Videos" />
+                <label for="chk7">Videos</label>
+                <br />
+                <input id="chk8" type="checkbox" value="CtyMet" />
+                <label for="chk8">City Meetups</label>
+                <br />
+                <input id="chk9" type="checkbox" value="Wiki" />
+                <label for="chk9">Wiki</label>
+                <br />
+                <input id="chk10" type="checkbox" value="Forum" />
+                <label for="chk10">Forum</label>
+                <br />
+                <input id="chk11" type="checkbox" value="AdCrs" />
+                <label for="chk11">Additional Courses</label>
+            </div>
+            <br />
+            <br />
+            <label for="cmnt" class="lbl">Any Comments or Suggestions?</label>
+            <br />
+            <textarea id="cmnt" class="inf" placeholder="Enter your comment..."></textarea>
+            <br />
+            <br />
+        </div>
+<input type="submit" id="btn" />
+        <br />
+        <br />
+</form>
+</body>
+
+</html>
